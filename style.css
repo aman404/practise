@@ -132,6 +132,11 @@
 				border-bottom: 2px solid darkgray;
 				border-top: 2px solid darkgray;
 			}
+
+            h1
+            {
+                width: 80%;
+            }
 		}
 		
 
