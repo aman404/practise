@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>W3School</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		*
+		{
+			box-sizing: border-box;
+		}
+		body
+		{
+
+			background-color: lightgray;
+			padding: 30px;
+		}
+		header
+		{
+			height: 400px;
+			text-align: center;
+			padding: 30px;
+			border: 2px solid black;
+			background-image: url('robo2.jpg');
+		}
+		header h1
+		{
+			color: white;
+			font-size: 60px;
+			padding: 10px 20px;
+			background-color: rgba(153, 153, 153, 0.4);
+			width: 40%;
+			margin: auto;
+			overflow: hidden;
+		}
+
+		header p 
+		{
+			color: white;
+			font-size: 20px;
+			padding: 10px 20px;
+			background-color: rgba(153, 153, 153, 0.4);
+			width: 40%;
+			margin:  auto;
+
+		}
+		.topnav
+		{
+			background-color: #4d4d4d;
+			overflow: hidden;
+			z-index: 1;
+			position: sticky;
+			top: 0px;
+		}
+		.topnav a
+		{
+			display: block;
+			color: white;
+			padding: 14px 16px;
+			font-size: 16px;
+			float: left;
+			text-decoration: none;
+			border
+
+		}
+		.topnav a:hover
+		{
+			background-color: black;
+		}
+
+		.row
+		{
+			margin: 20px 0px;
+			overflow: hidden;
+		}
+		.row .leftColumn
+		{
+			float: left;
+			width: 25%;
+			padding: 15px;
+			
+		}
+		.row .midColumn
+		{
+			float: left;
+			width: 50%;
+			padding: 15px;
+			border-right: 2px solid darkgray;
+			border-left: 2px solid darkgray;
+			
+		}
+		.row .rightColumn
+		{
+			float: left;
+			width: 25%;
+			padding: 15px;
+			
+		}
+		.card
+		{
+			background-color: white;
+			margin: 20px;
+			padding: 20px;
+		}
+
+		footer
+		{
+			padding: 20px;
+			border: 2px solid darkgray;
+		}
+		
+		@media screen and (max-width: 800px) 
+		{
+  			.row .leftColumn, .row .rightColumn, .row .midColumn
+  			{
+    			width: 100%;
+    			padding: 0;
+ 			}
+ 			body
+ 			{
+ 				padding: 0px;
+ 			}
+ 			.topnav a
+			{
+				float: none;
+				width: 100%;
+				text-align: center;
+				border-bottom: 2px solid black;
+				border-right: none;
+				border-left: none;
+
+			}
+			.topnav
+			{
+				position: static;
+			}
+			.row .midColumn
+			{
+				border-bottom: 2px solid darkgray;
+				border-top: 2px solid darkgray;
+			}
+		}
+		
+
+		
+
+		.inner
+		{
+			border: 2px solid black;
+			margin: 20px;
+			padding: 20px;
+			text-align: center;
+		}
+
+		img
+		{
+			display: block;
+			margin: auto;
+			margin-top: 20px;
+			opacity: 0.6;
+			transition: 0.5s ease;
+		}
+
+		img:hover
+		{
+			opacity: 1.0;
+			width: 100%;
+			height: auto;
+		}
+
+	</style>
+	
+</head>
+<body>
+	
+	<header>
+		<h1>My Website</h1><br>
+		<p>This is the header</p>
+	</header>
+
+	
+
+	<div class="topnav">
+
+		<a href="#">Link</a>
+		<a href="#">Link</a>
+		<a href="#">Link</a>
+		<a href="#">Link</a>
+
+		<a href="#" style="float: right;  ">Link</a>
+		<a href="#" style="float: right;  ">Link</a>
+	</div>
+
+	<div class="row">
+		<div class="leftColumn">
+			<div class="card">
+				This is a column. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+		</div>
+		<div class="midColumn">
+			<div class="card">
+				This is a column. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<img src="robo.jpg" width="80%" height="auto">
+			</div>
+			<hr style="width: 90%;">
+			<div class="card">
+				This is a column. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<img src="robo.jpg" width="80%" height="auto">
+			</div>
+			<hr style="width: 90%;">
+			<div class="card">
+				This is a column. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<img src="robo.jpg" width="80%" height="auto">
+			</div>
+			
+		</div>
+		<div class="rightColumn">
+			<div class="card">
+				This is a column. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+
+			<hr style="width: 90%;">
+
+			<div class="card">
+				This is a column. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+
+		</div>	
+	</div>
+
+	<footer>
+		This is a footer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</footer>
+
+	<!--experimental part below-->
+
+	
+</body>
+</html>
